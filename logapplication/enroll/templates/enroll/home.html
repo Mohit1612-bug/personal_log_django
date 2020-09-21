@@ -1,0 +1,37 @@
+{%extends 'enroll/header.html'%}
+{%load static%}
+{%block title%}Home Page{%endblock%}
+
+{%block css%}
+  <link rel="stylesheet" href="{% static 'enroll/css/home.css'%}">
+{%endblock%}
+{%block content%}
+    <section class="main_content">
+      <div class="container">
+        <div class="row align-items-center py-3">
+            <div class="col-12 col-lg-6">
+              <div class="alert alert-primary" role="alert">
+                <h4 class="alert-heading title-text text-uppercase">Personal Logs!</h4>
+                  <p>This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                  <hr>
+                  <p class="mb-0" style="font-size: 16px;font-weight: 400;">It's good practice to store your day to day task <strong>somewhere!</strong></p>
+              </div>
+                <!-- <h3 class="title-text text-uppercase">Personal Log</h3>
+                <h1 class="title-text text-uppercase" >Project </h1>
+                <p style="color: lightgrey;font-size: 16px;font-weight: 400;">Personal Log Project With DJANGO</p> -->
+                <div class="site_buttons">
+                    <div class="d-flex flex-row flex-wrap">
+                        <a href="{%url 'signuppage'%}" class="btn button  primary-button">Sign Up</a>
+                        <a href="{%url 'loginpage'%}" class="btn button  secondary-button">Log In</a>
+                        <!-- <button type="button" class="btn button primary-button">Hire Me</button>
+                        <button type="button" class="btn button secondary-button">Check CV</button> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 py-3">
+                <img src="https://raw.githubusercontent.com/akashyap2013/PortFolio_Website/master/img/banner/banner-image.png" class="img-fluid" alt="">
+            </div>
+        </div>
+      </div>
+</section>
+{%endblock%}
